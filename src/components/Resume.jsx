@@ -4,43 +4,38 @@ import resumeFile from "../documents/resume.pdf";
 const Resume = ({ classicHeader, darkTheme }) => {
   const educationDetails = [
     {
-      yearRange: "2000 - 2004",
-      title: "Computer Science",
-      place: "International University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
-    {
-      yearRange: "2005 - 2008",
-      title: "Bachelor Degree",
-      place: "University of California",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-    },
-    {
-      yearRange: "2009 - 2012",
+      yearRange: "2006 - 2008",
       title: "Master Degree",
-      place: "Harvard University",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      place:
+        "Riga International School of Economics and Business Administration",
+      desc: "Business Management",
+    },
+    {
+      yearRange: "2001 - 2005",
+      title: "Bachelor Degree",
+      place: "University of Latvia",
+      desc: "Social Sciences in Management and Administration",
     },
   ];
 
   const experienceDetails = [
     {
-      yearRange: "2012 - 2013",
-      title: "Jr. UI UX Designer",
-      place: "Themeforest",
+      yearRange: "2023.oct - 2023.dec",
+      title: "Jr. Front-end Developer || Internship",
+      place: "Accenture Baltics",
       desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
     },
     {
-      yearRange: "2014 - 2016",
-      title: "Jr. Product Designer",
-      place: "Dribbble",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2018.jan– 2023.sep",
+      title: "Career transition",
+      place: "",
+      desc: "Leveraging strong analytical skills and a passion for technology to quickly acquire new competencies and excel in a fast-paced learning environment.",
     },
     {
-      yearRange: "2017 - 2019",
-      title: "Product Designer",
-      place: "Adobe",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      yearRange: "2013.sep - 2017.dec",
+      title: "Analyst",
+      place: "Latectus Ltd (a subsidiary of the SEB group)",
+      desc: "Analyzing real estate to be acquired (Comparative Market Analysis ); communicating the findings and insights to the relevant stakeholders; participation in real estate auctions conducted by bailiffs to acquire the properties.",
     },
   ];
 
