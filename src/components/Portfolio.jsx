@@ -97,22 +97,24 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     {
       title: "SheGoesTech final task",
       projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+        "A dynamic landing page featuring an interactive form and data management capabilities. The front-end includes a button to display a form with conditional fields, validation for form inputs, error messages, and a popup confirmation message upon successful submission. A table displays the submitted data with options to delete entries. For the back-end, created a Node.js server with API endpoints to handle Create-Read-Update-Delete (CRUD) operations.",
       courses: "SheGoesTech Bootcamp",
       technologies: "HTML5, CSS3, JavaScript, Vue.js, SQL, Node.js, Git/GitHub",
-      industry: "Beauty & Health",
+      mainTechologies: "Vue.js, SQL, Node.js",
       date: "May, 2023",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "the project is not deployed",
+        link: "",
       },
       socialLinks: {
         github: "https://github.com/KristianaTR/SheGoesTech-final-task",
       },
-      thumbImage: "images/projects/project-4.jpg",
+      thumbImage: "images/projects/project-4-SGT_Vue_00.jpg",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-4.jpg",
+        "images/projects/project-4-SGT_Vue_01.jpg",
+        "images/projects/project-4-SGT_Vue_02.jpg",
+        "images/projects/project-4-SGT_Vue_03.jpg",
+        "images/projects/project-4-SGT_Vue_04.jpg",
       ],
       categories: [filters.BRAND, filters.PHOTOS],
     },
@@ -314,7 +316,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                             <h5 className="text-white fw-400">
                               {project.title}
                             </h5>
-                            <span className="text-light">Category</span>
+                            <span className="text-light">
+                              {project.mainTechologies}
+                            </span>
                           </div>
                         </div>
                       </div>
