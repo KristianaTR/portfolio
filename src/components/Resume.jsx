@@ -18,18 +18,38 @@ const Resume = ({ classicHeader, darkTheme }) => {
     },
   ];
 
+  const relevantCourses = [
+    {
+      yearRange: "2023.jan - 2023.aug",
+      title: "JavaScript Bootcamp",
+      place: "Accenture Training",
+      desc: "A comprehensive course covering foundational and advanced JavaScript, DOM manipulation, HTML/CSS/JS website creation, backend development with Node.js and Express.js, API and database fundamentals, RESTful API construction, MongoDB integration, React.js and its advanced features, React Router, Material UI components, and culminates in building a full-stack React application.",
+    },
+    {
+      yearRange: "2022.dec",
+      title: "WEB Development Bootcamp",
+      place: "Riga Coding School",
+      desc: "A full-stack WEB development course covering HTML, CSS, JavaScript, PHP, MySQL, and WordPress.",
+    },
+    {
+      yearRange: "2022.dec",
+      title: "Vue.js Framework",
+      place: "Riga Coding School",
+      desc: "A short introductory course on the Vue.js framework and modern web development practices.",
+    },
+  ];
   const experienceDetails = [
     {
       yearRange: "2023.oct - 2023.dec",
       title: "Jr. Front-end Developer || Internship",
       place: "Accenture Baltics",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      desc: "Advancing my front-end development skills through hands-on experiences. Following a structured internship roadmap crafted by experienced professionals.",
     },
     {
       yearRange: "2018.jan– 2023.sep",
       title: "Career transition",
       place: "",
-      desc: "Leveraging strong analytical skills and a passion for technology to quickly acquire new competencies and excel in a fast-paced learning environment.",
+      desc: "Actively participating in training programs and continuously acquiring new skills. I leverage my strong analytical abilities and natural talent for creativity to excel in the field of technology. As a determined individual, I am dedicated to advancing my expertise and contributing effectively to the tech industry.",
     },
     {
       yearRange: "2013.sep - 2017.dec",
@@ -38,33 +58,6 @@ const Resume = ({ classicHeader, darkTheme }) => {
       desc: "Analyzing real estate to be acquired (Comparative Market Analysis ); communicating the findings and insights to the relevant stakeholders; participation in real estate auctions conducted by bailiffs to acquire the properties.",
     },
   ];
-
-  // const skills = [
-  //   {
-  //     name: "Web Design",
-  //     percent: 65,
-  //   },
-  //   {
-  //     name: "HTML/CSS",
-  //     percent: 95,
-  //   },
-  //   {
-  //     name: "JavaScript",
-  //     percent: 80,
-  //   },
-  //   {
-  //     name: "React JS",
-  //     percent: 70,
-  //   },
-  //   {
-  //     name: "Angular Js",
-  //     percent: 60,
-  //   },
-  //   {
-  //     name: "Bootstrap",
-  //     percent: 99,
-  //   },
-  // ];
 
   return (
     <section
@@ -95,39 +88,6 @@ const Resume = ({ classicHeader, darkTheme }) => {
         </div>
         {/* Heading end*/}
         <div className="row gx-5">
-          {/* My Education */}
-          <div className="col-md-6">
-            <h2
-              className={
-                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
-              }
-            >
-              My Education
-            </h2>
-            {educationDetails.length > 0 &&
-              educationDetails.map((value, index) => (
-                <div
-                  key={index}
-                  className={
-                    "bg-white  rounded p-4 mb-4 " +
-                    (darkTheme ? "bg-dark" : "bg-white border")
-                  }
-                >
-                  <p className="badge bg-primary text-2 fw-400">
-                    {value.yearRange}
-                  </p>
-                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
-                    {value.title}
-                  </h3>
-                  <p className={darkTheme ? "text-primary" : "text-danger"}>
-                    {value.place}
-                  </p>
-                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
-                    {value.desc}
-                  </p>
-                </div>
-              ))}
-          </div>
           {/* My Experience */}
           <div className="col-md-6">
             <h2
@@ -161,45 +121,72 @@ const Resume = ({ classicHeader, darkTheme }) => {
                 </div>
               ))}
           </div>
-        </div>
-        {/* My Skills
-        <h2
-          className={
-            "text-6 fw-600 mt-4 mb-4 " + (darkTheme ? "text-white" : "")
-          }
-        >
-          My Skills
-        </h2>
-        <div className="row gx-5">
-          {skills.length > 0 &&
-            skills.map((skill, index) => (
-              <div key={index} className="col-md-6">
-                <p
-                  className={
-                    " fw-500 text-start mb-2 " +
-                    (darkTheme ? "text-light" : "text-dark")
-                  }
-                >
-                  {skill.name}{" "}
-                  <span className="float-end">{skill.percent}%</span>
-                </p>
+          {/* My Education */}
+          <div className="col-md-6">
+            <h2
+              className={
+                "text-6 fw-600 mb-4 " + (darkTheme ? "text-white" : "")
+              }
+            >
+              Relevant Courses
+            </h2>
+            {relevantCourses.length > 0 &&
+              relevantCourses.map((value, index) => (
                 <div
+                  key={index}
                   className={
-                    "progress progress-sm mb-4 " + (darkTheme ? "bg-dark" : "")
+                    "bg-white  rounded p-4 mb-4 " +
+                    (darkTheme ? "bg-dark" : "bg-white border")
                   }
                 >
-                  <div
-                    className="progress-bar"
-                    role="progressbar"
-                    style={{ width: skill.percent + "%" }}
-                    aria-valuenow={skill.percent}
-                    aria-valuemin={0}
-                    aria-valuemax={100}
-                  />
+                  <p className="badge bg-primary text-2 fw-400">
+                    {value.yearRange}
+                  </p>
+                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                    {value.title}
+                  </h3>
+                  <p className={darkTheme ? "text-primary" : "text-danger"}>
+                    {value.place}
+                  </p>
+                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+                    {value.desc}
+                  </p>
+                </div>
+              ))}
+          </div>
+        </div>
+        <div className="row gx-5 mt-5">
+          <h2
+            className={"text-6 fw-600 mb-4  " + (darkTheme ? "text-white" : "")}
+          >
+            My Education
+          </h2>
+          {educationDetails.length > 0 &&
+            educationDetails.map((value, index) => (
+              <div className="col-md-6">
+                <div
+                  key={index}
+                  className={
+                    "bg-white  rounded p-4 mb-4 " +
+                    (darkTheme ? "bg-dark" : "bg-white border")
+                  }
+                >
+                  <p className="badge bg-primary text-2 fw-400">
+                    {value.yearRange}
+                  </p>
+                  <h3 className={"text-5 " + (darkTheme ? "text-white" : "")}>
+                    {value.title}
+                  </h3>
+                  <p className={darkTheme ? "text-primary" : "text-danger"}>
+                    {value.place}
+                  </p>
+                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+                    {value.desc}
+                  </p>
                 </div>
               </div>
             ))}
-        </div> */}
+        </div>
         <div className="text-center mt-5">
           <a
             className="btn btn-outline-secondary rounded-pill shadow-none"
