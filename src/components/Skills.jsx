@@ -4,41 +4,41 @@ const Skills = ({ classicHeader, darkTheme }) => {
   // skills details
   const skills = [
     {
-      name: "Graphic Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-palette",
+      name: "Basic",
+      desc: "HTML, CSS, JavaScript, TypeScript",
+      icon: "fas fa-code",
     },
     {
-      name: "Web Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-desktop",
+      name: "JavaScript Frameworks and Libraries",
+      desc: "React.js, Vue.js, Node.js",
+      icon: "fa-brands fa-js",
     },
     {
-      name: "UI/UX Design",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-pencil-ruler",
+      name: "CSS Frameworks and Libraries",
+      desc: "Bootstrap, Sass, styled-components",
+      icon: "fa-brands fa-css3",
     },
     {
-      name: "App Design & Develop",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      name: "Design Tools",
+      desc: "Figma, Canva",
       icon: "fas fa-paint-brush",
     },
     {
-      name: "Business Analysis",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-chart-area",
+      name: "Back-end technologies",
+      desc: "PHP, MySQL, MongoDB, Express",
+      icon: "fas fa-database",
     },
     {
-      name: "SEO Marketing",
-      desc: "Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      icon: "fas fa-bullhorn",
+      name: "Version Control",
+      desc: "Git, GitHub",
+      icon: "fa-brands fa-square-git",
     },
   ];
 
   return (
     <section
       id="skills"
-      className={"section " + (darkTheme ? "bg-dark-2" : "bg-light")}
+      className={"section bg-light"}
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
@@ -64,6 +64,10 @@ const Skills = ({ classicHeader, darkTheme }) => {
         {/* Heading end*/}
         {/* content start */}
         <div className="row">
+          <h4 className="text-center mb-5">
+            During all my coding experiences, I have used the following
+            technologies:
+          </h4>
           <div className="col-lg-11 mx-auto">
             <div className="row">
               {skills.length > 0 &&
@@ -78,9 +82,7 @@ const Skills = ({ classicHeader, darkTheme }) => {
                       >
                         <i className={skill.icon} />
                       </div>
-                      <h3 className={darkTheme ? "text-white" : ""}>
-                        {skill.name}
-                      </h3>
+                      <h3>{skill.name}</h3>
                       <p
                         className={"mb-0 " + (darkTheme ? "text-white-50" : "")}
                       >
