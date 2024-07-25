@@ -20,23 +20,23 @@ const Resume = ({ classicHeader, darkTheme }) => {
 
   const relevantCourses = [
     {
-      yearRange: "2023.jan - 2023.aug",
+      yearRange: "2023.jun - 2023.aug",
       title: "JavaScript Bootcamp",
       place: "Accenture Training",
       desc: "A comprehensive course covering foundational and advanced JavaScript, DOM manipulation, HTML/CSS/JS website creation, backend development with Node.js and Express.js, API and database fundamentals, RESTful API construction, MongoDB integration, React.js and its advanced features, React Router, Material UI components, and culminates in building a full-stack React application.",
+    },
+    {
+      yearRange: "2023.jan - 2023.may",
+      title: "She Goes Tech Bootcamp",
+      place: "Accenture Training",
+      desc: "A training in web development, covering HTML, CSS, JavaScript, jQuery, the Vue.js framework, Node.js, SQL, and testing, culminating in practical tasks and final projects.",
     },
     {
       yearRange: "2022.dec",
       title: "WEB Development Bootcamp",
       place: "Riga Coding School",
       desc: "A full-stack WEB development course covering HTML, CSS, JavaScript, PHP, MySQL, and WordPress.",
-    },
-    {
-      yearRange: "2022.dec",
-      title: "Vue.js Framework",
-      place: "Riga Coding School",
-      desc: "A short introductory course on the Vue.js framework and modern web development practices.",
-    },
+    }
   ];
   const experienceDetails = [
     {
