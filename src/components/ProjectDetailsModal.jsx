@@ -92,7 +92,11 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                     >
                       Project Info:
                     </h4>
-                    <p>{projectDetails?.projectInfo}</p>
+                    <ul>
+                      {projectDetails?.projectInfo?.map((info, index) => (
+                        <li key={index}>{info}</li>
+                      ))}
+                    </ul>
                     <h4
                       className={
                         "text-4 font-weight-600 mt-4" +
@@ -157,36 +161,38 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                         </a>
                       </li>
                     </ul>
-                    <div className="row no-gutters align-items-center">
-                      <div
-                        className={
-                          "col-auto text-dark font-weight-600" +
-                          (darkTheme ? " text-white" : "")
-                        }
-                      >
-                        Code:
-                      </div>
-                      <div className="col-auto">
-                        <ul
+                    {projectDetails.socialLinks && (
+                      <div className="row no-gutters align-items-center">
+                        <div
                           className={
-                            "social-icons" +
-                            (darkTheme ? " social-icons-muted" : "")
+                            "col-auto text-dark font-weight-600" +
+                            (darkTheme ? " text-white" : "")
                           }
                         >
-                          <li className="social-icons-github">
-                            <a
-                              data-toggle="tooltip"
-                              href={projectDetails?.socialLinks?.github}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              data-original-title="GitHub"
-                            >
-                              <i className="fab fa-github" />
-                            </a>
-                          </li>
-                        </ul>
+                          Code:
+                        </div>
+                        <div className="col-auto">
+                          <ul
+                            className={
+                              "social-icons" +
+                              (darkTheme ? " social-icons-muted" : "")
+                            }
+                          >
+                            <li className="social-icons-github">
+                              <a
+                                data-toggle="tooltip"
+                                href={projectDetails?.socialLinks?.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-original-title="GitHub"
+                              >
+                                <i className="fab fa-github" />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                 </div>
               </div>

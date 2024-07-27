@@ -17,28 +17,27 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
 
   const projectsData = [
     {
-      title: "Project Title 1",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      courses: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+      title: "Website for Animal Shelter Mežavairogi",
+      projectInfo: [
+        "The goal was to create a modern and user-friendly website to contribute to the shelter's mission.",
+        "In a team of two developers, I utilized WordPress with the Elementor plugin to develop the website.",
+        "Throughout the project, we customized the premade theme to align with the new design. ",
+        "I collaborated closely with designers and the Product Manager to establish a systematic approach to design and functionality. ",
+        "I also implemented secure payment systems, including credit card and Internet banking platforms, for donation purposes. *Unfortunately, this option was later canceled due to client preferences.",
+      ],
+      courses: "Riga Tech Girls Mentorship Programm",
+      technologies: "HTML, CSS, WordPress, PHP, Trello, Figma",
+      mainTechologies: "WordPress, PHP",
+      date: "December, 2023",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "www.mezavairogi.lv",
+        link: "https://mezavairogi.lv",
       },
-      socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
-      },
-      thumbImage: "images/projects/project-1.jpg",
+      thumbImage: "images/projects/project-1-Mezavairogi_00.jpg",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/project-1-Mezavairogi_01.jpg",
+        "images/projects/project-1-Mezavairogi_02.jpg",
+        "images/projects/project-1-Mezavairogi_03.jpg",
       ],
       categories: [filters.BRAND],
     },
@@ -96,8 +95,12 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     },
     {
       title: "SheGoesTech final task",
-      projectInfo:
-        "A dynamic landing page featuring an interactive form and data management capabilities. The front-end includes a button to display a form with conditional fields, validation for form inputs, error messages, and a popup confirmation message upon successful submission. A table displays the submitted data with options to delete entries. For the back-end, created a Node.js server with API endpoints to handle Create-Read-Update-Delete (CRUD) operations.",
+      projectInfo: [
+        "A dynamic landing page featuring an interactive form and data management capabilities.",
+        "The front-end includes a button to display a form with conditional fields, validation for form inputs, error messages, and a popup confirmation message upon successful submission.", 
+        "A table displays the submitted data with options to delete entries.", 
+        "For the back-end, created a Node.js server with API endpoints to handle Create-Read-Update-Delete (CRUD) operations.",
+      ], 
       courses: "SheGoesTech Bootcamp",
       technologies: "HTML5, CSS3, JavaScript, Vue.js, SQL, Node.js, Git/GitHub",
       mainTechologies: "Vue.js, SQL, Node.js",
