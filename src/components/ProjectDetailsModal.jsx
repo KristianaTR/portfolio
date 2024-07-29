@@ -161,7 +161,7 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                         </a>
                       </li>
                     </ul>
-                    {projectDetails.socialLinks && (
+                    {projectDetails?.socialLinks && (
                       <div className="row no-gutters align-items-center">
                         <div
                           className={
