@@ -123,35 +123,41 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       categories: [filters.BRAND, filters.PHOTOS],
     },
     {
-      title: "Project Title 5",
-      projectInfo:
-        "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
-      courses: "Ruby Clinton",
-      technologies: "iOS, HTML5, CSS3, PHP, Java",
-      industry: "Art & Design",
-      date: "July 16, 2019",
+      title: "E-commerce website",
+      projectInfo: [
+        "This is a full-stack e-commerce furniture store application I built jointly with two other aspiring developers as the final project of the JavaScript Bootcamp. ",
+        "The front-end utilizes React.js functional components, while the backend is powered by a RESTful API built with Node.js and Express.",
+        "My responsibility was to create a user-friendly interface that displays a fetched furniture stock list, detailed product descriptions, and options to add or remove items from a shopping list and proceed to checkout. ",
+        "Additionally, the app features user login and admin pages for managing users and inventory. ",
+        "All furniture stock and user data are stored in MongoDB and managed using Mongoose."
+      ],
+      courses: "JavaScript Bootcamp",
+      technologies: "React.js, TypeScript, Node.js, MongoDB",
+      mainTechologies: "React.js, TypeScript, MongoDB",
+      date: "August, 2023",
       url: {
-        name: "www.example.com",
-        link: "https://www.example.com",
+        name: "the project is not deployed",
+        link: "",
       },
       socialLinks: {
-        facebook: "http://www.facebook.com/",
-        twitter: "http://www.twitter.com/",
-        google: "http://www.google.com/",
-        instagram: "http://www.instagram.com/",
-        mail: "mailto:example@gmail.com",
+        github: "https://github.com/IevaZR/E-commerce-store",
       },
-      thumbImage: "images/projects/project-5.jpg",
+      thumbImage: "images/projects/project-5-ecomerce_00.jpg",
       sliderImages: [
-        "images/projects/project-1.jpg",
-        "images/projects/project-5.jpg",
+        "images/projects/project-5-ecomerce_01.jpg",
+        "images/projects/project-5-ecomerce_02.jpg",
+        "images/projects/project-5-ecomerce_03.jpg",
+        "images/projects/project-5-ecomerce_04.jpg",
+        "images/projects/project-5-ecomerce_05.jpg",
+        "images/projects/project-5-ecomerce_06.jpg",
       ],
       categories: [filters.DESIGN],
     },
     {
       title: "Project Title 6",
-      projectInfo:
+      projectInfo: [
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+      ],
       courses: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
       industry: "Art & Design",
@@ -176,8 +182,10 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
     },
     {
       title: "Project Title 7",
-      projectInfo:
+      projectInfo: [
         "Quidam lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure. Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.",
+
+      ],
       courses: "Ruby Clinton",
       technologies: "iOS, HTML5, CSS3, PHP, Java",
       industry: "Art & Design",
