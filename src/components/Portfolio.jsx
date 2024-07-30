@@ -113,12 +113,12 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       socialLinks: {
         github: "https://github.com/KristianaTR/SheGoesTech-final-task",
       },
-      thumbImage: "images/projects/project-4-SGT_Vue_00.jpg",
+      thumbImage: "images/projects/project-4-SGT_Vue_00.png",
       sliderImages: [
-        "images/projects/project-4-SGT_Vue_01.jpg",
-        "images/projects/project-4-SGT_Vue_02.jpg",
-        "images/projects/project-4-SGT_Vue_03.jpg",
-        "images/projects/project-4-SGT_Vue_04.jpg",
+        "images/projects/project-4-SGT_Vue_01.png",
+        "images/projects/project-4-SGT_Vue_02.png",
+        "images/projects/project-4-SGT_Vue_03.png",
+        "images/projects/project-4-SGT_Vue_04.png",
       ],
       categories: [filters.BRAND, filters.PHOTOS],
     },
