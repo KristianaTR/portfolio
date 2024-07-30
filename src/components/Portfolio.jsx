@@ -60,11 +60,11 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       socialLinks: {
         github: "https://github.com/KristianaTR/Climate_Calculator_LV",
       },
-      thumbImage: "images/projects/project-2-Calculator_00.jpg",
+      thumbImage: "images/projects/project-2-Calculator_00.png",
       sliderImages: [
-        "images/projects/project-2-Calculator_01.jpg",
-        "images/projects/project-2-Calculator_02.jpg",
-        "images/projects/project-2-Calculator_03.jpg",
+        "images/projects/project-2-Calculator_01.png",
+        "images/projects/project-2-Calculator_02.png",
+        "images/projects/project-2-Calculator_03.png",
       ],
       categories: [filters.DESIGN],
     },
