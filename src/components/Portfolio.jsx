@@ -142,14 +142,14 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       socialLinks: {
         github: "https://github.com/IevaZR/E-commerce-store",
       },
-      thumbImage: "images/projects/project-5-ecomerce_00.jpg",
+      thumbImage: "images/projects/project-5-ecommerce_00.png",
       sliderImages: [
-        "images/projects/project-5-ecomerce_01.jpg",
-        "images/projects/project-5-ecomerce_02.jpg",
-        "images/projects/project-5-ecomerce_03.jpg",
-        "images/projects/project-5-ecomerce_04.jpg",
-        "images/projects/project-5-ecomerce_05.jpg",
-        "images/projects/project-5-ecomerce_06.jpg",
+        "images/projects/project-5-ecommerce_01.png",
+        "images/projects/project-5-ecommerce_02.png",
+        "images/projects/project-5-ecommerce_03.png",
+        "images/projects/project-5-ecommerce_04.png",
+        "images/projects/project-5-ecommerce_05.png",
+        "images/projects/project-5-ecommerce_06.png",
       ],
       categories: [filters.DESIGN],
     },
@@ -317,7 +317,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                         <div className="portfolio-overlay">
                           <a
                             className="popup-ajax stretched-link"
-                            href=""
+                            href="#exampleModal"
                             onClick={() => {
                               setSelectedProjectDetails(projectsData[index]);
                             }}
