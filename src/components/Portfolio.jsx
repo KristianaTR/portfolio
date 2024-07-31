@@ -85,12 +85,12 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       socialLinks: {
         github: "https://github.com/KristianaTR/internship-project_02",
       },
-      thumbImage: "images/projects/project-3-Int_05.jpg",
+      thumbImage: "images/projects/project-3-Int_00.png",
       sliderImages: [
-        "images/projects/project-3-Int_01.jpg",
-        "images/projects/project-3-Int_02.jpg",
-        "images/projects/project-3-Int_03.jpg",
-        "images/projects/project-3-Int_04.jpg",
+        "images/projects/project-3-Int_01.png",
+        "images/projects/project-3-Int_02.png",
+        "images/projects/project-3-Int_03.png",
+        "images/projects/project-3-Int_04.png",
       ],
       categories: [filters.PHOTOS],
     },
