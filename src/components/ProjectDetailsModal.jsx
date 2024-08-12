@@ -117,9 +117,9 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                             (darkTheme ? " text-white" : "")
                           }
                         >
-                          Courses:
+                          Project Origins:
                         </span>
-                        {projectDetails?.courses}
+                        {projectDetails?.origin}
                       </li>
                       <li>
                         <span
