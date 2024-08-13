@@ -92,7 +92,24 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                     >
                       Project Info:
                     </h4>
-                    <p>{projectDetails?.projectInfo}</p>
+                    <ul>
+                      {projectDetails?.projectInfo?.map((info, index) => (
+                        <li key={index}>{info}</li>
+                      ))}
+                    </ul>
+                    <h4
+                      className={
+                        "text-4 font-weight-600" +
+                        (darkTheme ? " text-white" : "")
+                      }
+                    >
+                      Challenges & Takeaways:
+                    </h4>
+                    <ul>
+                      {projectDetails?.reflections?.map((info, index) => (
+                        <li key={index}>{info}</li>
+                      ))}
+                    </ul>
                     <h4
                       className={
                         "text-4 font-weight-600 mt-4" +
@@ -113,9 +130,9 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                             (darkTheme ? " text-white" : "")
                           }
                         >
-                          Courses:
+                          Project Origins:
                         </span>
-                        {projectDetails?.courses}
+                        {projectDetails?.origin}
                       </li>
                       <li>
                         <span
@@ -135,69 +152,62 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                             (darkTheme ? " text-white" : "")
                           }
                         >
-                          Industry:
-                        </span>
-                        {projectDetails?.industry}
-                      </li>
-                      <li>
-                        <span
-                          className={
-                            "text-dark font-weight-600 me-2" +
-                            (darkTheme ? " text-white" : "")
-                          }
-                        >
                           Date:
                         </span>
                         {projectDetails?.date}
                       </li>
-                      <li>
-                        <span
+                        <li>
+                          <span
+                            className={
+                              "text-dark font-weight-600 me-2" +
+                              (darkTheme ? " text-white" : "")
+                            }
+                          >
+                            URL:
+                          </span>
+                          <a
+                            href={projectDetails?.url?.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {projectDetails?.url?.name}
+                          </a>
+                        </li>
+                      {/* {projectDetails?.url && projectDetails?.url?.link && (
+                      )} */}
+                    </ul>
+                    {projectDetails?.socialLinks && (
+                      <div className="row no-gutters align-items-center">
+                        <div
                           className={
-                            "text-dark font-weight-600 me-2" +
+                            "col-auto text-dark font-weight-600" +
                             (darkTheme ? " text-white" : "")
                           }
                         >
-                          URL:
-                        </span>
-                        <a
-                          href={projectDetails?.url?.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {projectDetails?.url?.name}
-                        </a>
-                      </li>
-                    </ul>
-                    <div className="row no-gutters align-items-center">
-                      <div
-                        className={
-                          "col-auto text-dark font-weight-600" +
-                          (darkTheme ? " text-white" : "")
-                        }
-                      >
-                        Code:
+                          Code:
+                        </div>
+                        <div className="col-auto">
+                          <ul
+                            className={
+                              "social-icons" +
+                              (darkTheme ? " social-icons-muted" : "")
+                            }
+                          >
+                            <li className="social-icons-github">
+                              <a
+                                data-toggle="tooltip"
+                                href={projectDetails?.socialLinks?.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-original-title="GitHub"
+                              >
+                                <i className="fab fa-github" />
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                      <div className="col-auto">
-                        <ul
-                          className={
-                            "social-icons" +
-                            (darkTheme ? " social-icons-muted" : "")
-                          }
-                        >
-                          <li className="social-icons-github">
-                            <a
-                              data-toggle="tooltip"
-                              href={projectDetails?.socialLinks?.github}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              data-original-title="GitHub"
-                            >
-                              <i className="fab fa-github" />
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                    )}
                   </div>
                 </div>
               </div>
