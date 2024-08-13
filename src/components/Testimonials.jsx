@@ -32,7 +32,7 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
       position: "Project Manager",
       connection: "Project Manager at 'Climate Calculator 2050' project",
       src: "images/testimonial/oksana.jfif",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam nisi delectus veniam consequuntur perferendis, eaque nihil sapiente eos magnam illo dicta perspiciatis possimus veritatis voluptatem odio, illum accusantium quisquam!",
+      desc: "I've been working with Kristiana on the Climate Calculator project, where she served as the junior Front End developer responsible for the web solution's front end. She consistently demonstrated strong attention to detail, quickly absorbed new information, and found solutions independently. Kristiana is committed to continuously improving her skills, and it showed in her work. She's also a great team player—easy to communicate with and collaborative in every aspect. I highly recommend Kristiana for FE development roles. She has a bright future ahead and would be a valuable asset to any team.",
       linkedin: "https://www.linkedin.com/in/oksanatatarina/",
     },
   ];
