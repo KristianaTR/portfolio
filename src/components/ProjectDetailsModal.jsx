@@ -99,6 +99,19 @@ const ProjectDetailsModal = ({ darkTheme, projectDetails }) => {
                     </ul>
                     <h4
                       className={
+                        "text-4 font-weight-600" +
+                        (darkTheme ? " text-white" : "")
+                      }
+                    >
+                      Challenges & Takeaways:
+                    </h4>
+                    <ul>
+                      {projectDetails?.reflections?.map((info, index) => (
+                        <li key={index}>{info}</li>
+                      ))}
+                    </ul>
+                    <h4
+                      className={
                         "text-4 font-weight-600 mt-4" +
                         (darkTheme ? " text-white" : "")
                       }
