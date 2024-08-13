@@ -10,9 +10,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   const [selectedProjectDetails, setSelectedProjectDetails] = useState();
 
   const filters = {
-    WORDPRESS: "WordPress",
     VUE: "Vue",
     REACT: "React",
+    WORDPRESS: "WordPress",
   };
 
   const projectsData = [
@@ -27,10 +27,10 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       ],
       reflections: [
         "Since implementing the donation option took a considerable amount of time and effort I invested, I will add some description of the process:",
-        " - I used the WooCommerce platform for WordPress and the EveryPay gateway plugin for that.",
-        " - Following the EveryPay Merchant Integration Manual, I configured the EveryPay gateway using the WordPress Dashboard.",
-        " - The gateway was activated using API keys to support Card, Open Banking, and PayPal payments.",
-        " - Access to the EveryPay payment demo account allowed testing before launching the live system.",
+        "I used the WooCommerce platform for WordPress and the EveryPay gateway plugin for that.",
+        "Following the EveryPay Merchant Integration Manual, I configured the EveryPay gateway using the WordPress Dashboard.",
+        "The gateway was activated using API keys to support Card, Open Banking, and PayPal payments.",
+        "Access to the EveryPay payment demo account allowed testing before launching the live system.",
       ],
       origin: "Riga TechGirls Mentorship Programm",
       technologies: "HTML, CSS, WordPress, PHP, Trello, Figma",
@@ -52,7 +52,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       title: "Climate Calculator 2050",
       projectInfo: [
         "Goal: a web-based customized version of the 2050 Energy and Emissions Calculator for Latvia based on an adjusted Excel model of the UK Climate Calculator",
-        "During my self-learning process, I utilized the Vue.js framework to build the website using reusable components",
+        "During my self-learning process, I utilized the Vue.js framework to build the front-end of website using reusable components",
         "Develop a responsive website designed by the UX/UI team",
         "Debug and troubleshoot front-end issues",
       ],
@@ -188,7 +188,11 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "Please note that the project is still a work in progress, and additional features and improvements are planned for future development.",
       ],
       reflections: [
-        "In progress.",      
+        "In developing this project, I navigated a range of complex topics:",
+        "Improved my ability to structure and organize the app (Redux structure, public folder, styles folder)",
+        "A significant challenge was implementing robust error handling with techniques like Error Boundaries and managing API errors.",
+        "Ensuring smooth animations and handling SVG icons efficiently using SVG sprites", 
+        "Will be more...",     
       ],
       origin: "Self Learning Process",
       technologies:
