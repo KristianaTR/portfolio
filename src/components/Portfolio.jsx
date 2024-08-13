@@ -10,9 +10,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   const [selectedProjectDetails, setSelectedProjectDetails] = useState();
 
   const filters = {
-    DESIGN: "Desing",
-    BRAND: "Brand",
-    PHOTOS: "Photos",
+    WORDPRESS: "WordPress",
+    VUE: "Vue",
+    REACT: "React",
   };
 
   const projectsData = [
@@ -46,7 +46,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/project-1-Mezavairogi_02.png",
         "images/projects/project-1-Mezavairogi_03.png",
       ],
-      categories: [filters.BRAND],
+      categories: [filters.WORDPRESS],
     },
     {
       title: "Climate Calculator 2050",
@@ -78,7 +78,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/project-2-Calculator_02.png",
         "images/projects/project-2-Calculator_03.png",
       ],
-      categories: [filters.DESIGN],
+      categories: [filters.VUE],
     },
     {
       title: "Accenture Internship Project",
@@ -109,7 +109,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/project-3-Int_03.png",
         "images/projects/project-3-Int_04.png",
       ],
-      categories: [filters.PHOTOS],
+      categories: [filters.REACT],
     },
     {
       title: "SheGoesTech final task",
@@ -141,7 +141,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/project-4-SGT_Vue_03.png",
         "images/projects/project-4-SGT_Vue_04.png",
       ],
-      categories: [filters.BRAND, filters.PHOTOS],
+      categories: [filters.VUE],
     },
     {
       title: "E-commerce website",
@@ -176,7 +176,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/project-5-ecommerce_05.png",
         "images/projects/project-5-ecommerce_06.png",
       ],
-      categories: [filters.DESIGN],
+      categories: [filters.REACT],
     },
     {
       title: "Pet Adoption App",
@@ -213,7 +213,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/project-6-PetAdoptionApp_06.png",
         "images/projects/project-6-PetAdoptionApp_07.png",
       ],
-      categories: [filters.BRAND],
+      categories: [filters.REACT],
     },
     {
       title: "Uzņēmēji Mieram Donation website",
@@ -245,7 +245,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/project-7-UznemejiMieram_03.png",
         "images/projects/project-7-UznemejiMieram_04.png",
       ],
-      categories: [filters.DESIGN, filters.PHOTOS],
+      categories: [filters.VUE],
     },
   ];
 
