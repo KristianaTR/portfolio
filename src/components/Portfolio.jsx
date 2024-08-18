@@ -198,7 +198,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       technologies:
         "React.js, TypeScript, styled-components, Redux, Node.js, MongoDB",
       mainTechologies: "React.js, TypeScript, MongoDB",
-      industry: "Art & Design",
       date: "February, 2024",
       url: {
         name: "the project is not deployed",
@@ -233,7 +232,6 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       origin: "Learning Project",
       technologies: "Vue.js, Node.js, Stripe",
       mainTechologies: "Vue.js, Node.js",
-      industry: "Art & Design",
       date: "December, 2023",
       url: {
         name: "the project is not deployed",
@@ -250,6 +248,35 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "images/projects/project-7-UznemejiMieram_04.png",
       ],
       categories: [filters.VUE],
+    },
+    {
+      title: "Weather app",
+      projectInfo: [
+        "This project was developed as part of a JavaScript Bootcamp, collaborating closely with my teammates.",
+        "The app shows average monthly weather for popular countries or based on user search queries.",
+        "The app uses an internal database.",
+        "Real-time temperature data is fetched from the Weather API provided by openweathermap.org.",
+      ],
+      reflections: [
+        "This was one of my initial experiences using React for web development, with a primary focus on leveraging component reusability, passing props, and utilizing hooks for state management.",      
+      ],
+      origin: "JavaScript Bootcamp",
+      technologies: "React.js, CSS",
+      mainTechologies: "React.js",
+      date: "July, 2023",
+      url: {
+        name: "kristianatr.github.io/WeatherApp",
+        link: "https://kristianatr.github.io/WeatherApp/",
+      },
+      socialLinks: {
+        github: "https://github.com/KristianaTR/WeatherApp",
+      },
+      thumbImage: "images/projects/project-8-WeatherApp_00.png",
+      sliderImages: [
+        "images/projects/project-8-WeatherApp_01.png",
+        "images/projects/project-8-WeatherApp_02.png",
+      ],
+      categories: [filters.REACT],
     },
   ];
 
