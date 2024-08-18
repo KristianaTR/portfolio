@@ -96,7 +96,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       mainTechologies: "React.js",
       date: "December, 2023",
       url: {
-        name: "www.kristianatr.github.io/internship-project_02",
+        name: "kristianatr.github.io/internship-project_02",
         link: "https://kristianatr.github.io/internship-project_02",
       },
       socialLinks: {
