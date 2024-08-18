@@ -34,19 +34,22 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
               }
             >
               I'm <span className="text-primary">Kristiāna Tatarčuka,</span> a
-              Junior Web Developer
+              Junior Front-end Developer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I'm passionate about coding and aspire to become a Web Developer.
-              With a strong commitment to continuous learning and development, I
-              am actively pursuing entry-level position to
-              kickstart my professional growth and make a valuable contribution
-              to the industry.
+              I'm deeply passionate about coding, a newfound love that drives me
+              to explore and master the art of web development. I thrive on the
+              challenge of solving problems through code, creating web solutions
+              that deliver engaging user experiences. 
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              Since I decided to transition into the IT industry, I've actively
-              pursued various courses and training programs to enhance my skills
-              and stay up-to-date with the latest technologies. 
+              With a creative mindset and strong determination, I'm dedicated to
+              becoming a valuable asset in this industry.
+            </p>
+            <p className={darkTheme ? "text-white-50" : ""}>
+              I am actively seeking a collaborative
+              team where I can contribute meaningfully, grow professionally, and
+              continue expanding my knowledge in the dynamic field of IT.
             </p>
           </div>
           {/* About me content end */}
@@ -64,14 +67,15 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 </li>
                 <li>
                   <span className="fw-600 me-2">Email:</span>
-                  <a href="mailto:kristiana.tatarcuka@gmail.com">kristiana.tatarcuka@gmail.com</a>
+                  <a href="mailto:kristiana.tatarcuka@gmail.com">
+                    kristiana.tatarcuka@gmail.com
+                  </a>
                 </li>
                 {/* <li>
                   <span className="fw-600 me-2">Age:</span>28
                 </li> */}
                 <li className="border-0">
-                  <span className="fw-600 me-2">From:</span>Riga,
-                  Latvia
+                  <span className="fw-600 me-2">From:</span>Riga, Latvia
                 </li>
               </ul>
               <a
