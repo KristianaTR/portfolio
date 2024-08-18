@@ -19,14 +19,14 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
       desc: "Kristiana exhibits a strong set of skills and attributes that make them a promising candidate in the field of software development. Their strengths include proficient coding abilities, analytical thinking, and a potential for full-stack development. They also display good soft skills, essential for effective teamwork. They lean toward frontend development, while also showing potential in backend roles. Their familiarity with technologies like React and their logical thinking capabilities contribute to their adaptability and problem-solving skills. Furthermore, their enthusiasm for learning and desire to explore advanced concepts make them a valuable asset in the world of software development.",
       linkedin: "https://www.linkedin.com/in/mustafadennisozdemir/",
     },
-    {
-      name: "Uldis Siliņš",
-      position: "Lead Frontend Developer",
-      connection: "Mentor at 'Climate Calculator 2050' project",
-      src: "images/testimonial/uldis.jfif",
-      desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam nisi delectus veniam consequuntur perferendis, eaque nihil sapiente eos magnam illo dicta perspiciatis possimus veritatis voluptatem odio, illum accusantium quisquam!",
-      linkedin: "https://www.linkedin.com/in/uldis-silins/",
-    },
+    // {
+    //   name: "Uldis Siliņš",
+    //   position: "Lead Frontend Developer",
+    //   connection: "Mentor at 'Climate Calculator 2050' project",
+    //   src: "images/testimonial/uldis.jfif",
+    //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam nisi delectus veniam consequuntur perferendis, eaque nihil sapiente eos magnam illo dicta perspiciatis possimus veritatis voluptatem odio, illum accusantium quisquam!",
+    //   linkedin: "https://www.linkedin.com/in/uldis-silins/",
+    // },
     {
       name: "Oksana Tatarina",
       position: "Project Manager",
