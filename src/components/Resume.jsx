@@ -20,19 +20,19 @@ const Resume = ({ classicHeader, darkTheme }) => {
 
   const relevantCourses = [
     {
-      yearRange: "2023.jun - 2023.aug",
+      yearRange: "2023",
       title: "JavaScript Bootcamp",
       place: "Accenture Training",
       desc: "A comprehensive course covering foundational and advanced JavaScript, DOM manipulation, HTML/CSS/JS website creation, backend development with Node.js and Express.js, API and database fundamentals, RESTful API construction, MongoDB integration, React.js and its advanced features, React Router, Material UI components, and culminates in building a full-stack React application.",
     },
     {
-      yearRange: "2023.jan - 2023.may",
+      yearRange: "2023",
       title: "She Goes Tech Bootcamp",
       place: "Accenture Training",
       desc: "A training in web development, covering HTML, CSS, JavaScript, jQuery, the Vue.js framework, Node.js, SQL, and testing, culminating in practical tasks and final projects.",
     },
     {
-      yearRange: "2022.dec",
+      yearRange: "2022",
       title: "WEB Development Bootcamp",
       place: "Riga Coding School",
       desc: "A full-stack WEB development course covering HTML, CSS, JavaScript, PHP, MySQL, and WordPress.",
@@ -40,19 +40,19 @@ const Resume = ({ classicHeader, darkTheme }) => {
   ];
   const experienceDetails = [
     {
-      yearRange: "2023.oct - 2023.dec",
+      yearRange: "2023",
       title: "Jr. Front-end Developer || Internship",
       place: "Accenture Baltics",
       desc: "Advancing my front-end development skills through hands-on experiences. Following a structured internship roadmap crafted by experienced professionals.",
     },
     {
-      yearRange: "2018.jan– 2023.sep",
+      yearRange: "2018 – 2023",
       title: "Career transition",
       place: "",
       desc: "Actively participating in training programs and continuously acquiring new skills. I leverage my strong analytical abilities and natural talent for creativity to excel in the field of technology. As a determined individual, I am dedicated to advancing my expertise and contributing effectively to the tech industry.",
     },
     {
-      yearRange: "2013.sep - 2017.dec",
+      yearRange: "2013 - 2017",
       title: "Analyst",
       place: "Latectus Ltd (a subsidiary of the SEB group)",
       desc: "Analyzing real estate to be acquired (Comparative Market Analysis ); communicating the findings and insights to the relevant stakeholders; participation in real estate auctions conducted by bailiffs to acquire the properties.",
