@@ -155,7 +155,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
               ))}
           </div>
         </div>
-        <div className="row gx-5 mt-5">
+        <div className="row gx-5 ">
           <h2
             className={"text-6 fw-600 mb-4  " + (darkTheme ? "text-white" : "")}
           >
