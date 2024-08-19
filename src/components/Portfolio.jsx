@@ -87,7 +87,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "The platform was built using React.js framework, with a focus on incorporating atomic design principles and using Redux for state management. For data storage, the project utilizes the browser's localStorage feature.",
       ],
       reflections: [
-        "My main focus was using new React libraries like styled-components and react-toasty. I also discovered a library called React Hook Form, which I will use in my next project for building forms.",      
+        "My main focus was using new React libraries like styled-components and react-toastify. I also discovered a library called React Hook Form, which I will use in my next project for building forms.",      
         "But the most challenging part was to structure the project and build the components aligning with atomic design methodology introduced by Brad Frost.",
         "The key takeaway from this project is the importance of utilizing various libraries and frameworks, as they significantly reduce the amount of code you need to write.",      
       ],
