@@ -169,7 +169,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
             <li className="social-icons-linkedin">
               <Tooltip text="LinkedIn" placement="top">
                 <a
-                  href="https://www.linkedin.com/in/kristi%C4%81na-tatar%C4%8Duka-0669981ba/"
+                  href="https://www.linkedin.com/in/kristiana-tatarcuka/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
