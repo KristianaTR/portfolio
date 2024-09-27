@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
 
 const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
+  const [loop, setLoop] = useState(true);
+  const [isStopped, setIsStopped] = useState(false);
+  const [showFirstString, setShowFirstString] = useState(false);
+
+  const stopLoop = () => {
+    setLoop(false);
+    setIsStopped(true);
+    setShowFirstString(true);
+  };
+
+  const startLoop = () => {
+    setLoop(true);
+    setIsStopped(false);
+    setShowFirstString(false);
+  };
+
   return (
     <section id="home">
       <div className="hero-wrap">
@@ -17,20 +33,29 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
             <div className="row">
               <div className="col-12 text-center">
                 <p className="text-7 fw-500 text-white mb-2 mb-md-3">Welcome</p>
+                <button onClick={loop ? stopLoop : startLoop}>
+                  {loop ? "||" : "|>"}
+                </button>
                 <h2 className="text-16 fw-600 text-white mb-2 mb-md-3">
-                  <Typewriter
-                    options={{
-                      strings: [
-                        "I'm Kristiāna Tatarčuka.",
-                        "I'm a Front-end Developer.",
-                        "I'm a Tech Enthusiast.",
-                        "I'm a Team player.",
-                      ],
-                      autoStart: true,
-                      loop: true,
-                    }}
-                  />
+                  {showFirstString ? (
+                    <span>I'm Kristiāna Tatarčuka.</span>
+                  ) : (
+                    <Typewriter
+                      options={{
+                        strings: [
+                          "I'm Kristiāna Tatarčuka.",
+                          "I'm a Front-end Developer.",
+                          "I'm a Tech Enthusiast.",
+                          "I'm a Team player.",
+                        ],
+                        autoStart: loop,
+                        loop: loop,
+                        cursor: isStopped ? "" : "|",
+                      }}
+                    />
+                  )}
                 </h2>
+
                 <p className="text-5 text-light mb-4">based in Riga, Latvia.</p>
                 <a
                   href="#contact"
