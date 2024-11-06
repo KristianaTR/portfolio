@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Typewriter from "typewriter-effect";
+import { Tooltip } from "./Tooltip";
 
 const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
   const [loop, setLoop] = useState(true);
@@ -33,20 +34,32 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
             <div className="row">
               <div className="col-12 text-center">
                 <p className="text-7 fw-500 text-white mb-2 mb-md-3">Welcome</p>
-                <button onClick={loop ? stopLoop : startLoop}>
-                  {loop ? "||" : "|>"}
-                </button>
+                <Tooltip
+                  text={loop ? "Pause the Typewriter" : "Start the Typewriter"}
+                  placement="right"
+                >
+                  <button
+                    className="btn btn-sm btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2"
+                    onClick={loop ? stopLoop : startLoop}
+                  >
+                    <i
+                      className={`fa-solid ${loop ? "fa-pause" : "fa-play"}`}
+                    />
+                    <span className="ms-2">{loop ? "Pause" : "Play"}</span>
+                  </button>
+                </Tooltip>
                 <h2 className="text-16 fw-600 text-white mb-2 mb-md-3">
                   {showFirstString ? (
-                    <span>I'm Kristiāna Tatarčuka.</span>
+                    <p className="text-16 fw-600 text-white mb-2 mb-md-3">
+                      My name is Kristiāna <br/>
+                      and this is my <br/> web development portfolio
+                    </p>
                   ) : (
                     <Typewriter
                       options={{
                         strings: [
-                          "I'm Kristiāna Tatarčuka.",
-                          "I'm a Front-end Developer.",
-                          "I'm a Tech Enthusiast.",
-                          "I'm a Team player.",
+                          "My name is Kristiāna",
+                          "and this is my web development portfolio",
                         ],
                         autoStart: loop,
                         loop: loop,
@@ -55,18 +68,6 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                     />
                   )}
                 </h2>
-
-                <p className="text-5 text-light mb-4">based in Riga, Latvia.</p>
-                <a
-                  href="#contact"
-                  className="btn btn-outline-primary rounded-pill shadow-none smooth-scroll mt-2"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavClick("contact");
-                  }}
-                >
-                  Hire Me
-                </a>
               </div>
             </div>
           </div>
