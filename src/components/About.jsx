@@ -33,23 +33,23 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Kristiāna Tatarčuka,</span> a
-              Junior Front-end Developer
+              I'm <span className="text-primary">Kristiāna Tatarčuka,</span> an
+              Aspiring Front-end Developer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I'm deeply passionate about coding, a newfound love that drives me
-              to explore and master the art of web development. I thrive on the
-              challenge of solving problems through code, creating web solutions
-              that deliver engaging user experiences. 
+              I'm passionate about coding and committed to deepening my web
+              development skills. I take pleasure in solving challenges through
+              code and creating web solutions that provide effective and
+              engaging user experiences.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
               With a creative mindset and strong determination, I'm dedicated to
               becoming a valuable asset in this industry.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I am actively seeking a collaborative
-              team where I can contribute meaningfully, grow professionally, and
-              continue expanding my knowledge in the dynamic field of IT.
+              I am actively seeking a collaborative team where I can contribute
+              meaningfully, grow professionally, and continue expanding my
+              knowledge in the dynamic field of IT.
             </p>
           </div>
           {/* About me content end */}
