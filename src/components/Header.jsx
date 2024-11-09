@@ -165,13 +165,14 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
               </li>
             </ul>
           </div>
-          <ul className="social-icons social-icons-muted social-icons-sm mt-lg-auto ms-auto ms-lg-0 d-flex">
+          <ul className="social-icons social-icons-muted social-icons-lg mt-lg-auto ms-auto ms-lg-0 d-flex">
             <li className="social-icons-linkedin">
               <Tooltip text="LinkedIn" placement="top">
                 <a
                   href="https://www.linkedin.com/in/kristiana-tatarcuka/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="LinkedIn Profile"
                 >
                   <i className="fab fa-linkedin" />
                 </a>
@@ -183,6 +184,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
                   href="https://github.com/KristianaTR"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Github Profile"
                 >
                   <i className="fab fa-github" />
                 </a>
@@ -198,6 +200,7 @@ const Header = ({ classicHeader, darkTheme, homeRef, handleNavClick }) => {
             }
             id="navbar-toggler"
             type="button"
+            aria-label="Toggle Navigation"
           >
             <span />
             <span />
