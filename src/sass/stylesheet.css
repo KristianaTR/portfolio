@@ -2839,7 +2839,7 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
 }
 
 .text-light {
-  color: #dee3e4 !important;
+  color: #4f4f4f !important; 
 }
 
 .text-body {

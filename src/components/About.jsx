@@ -5,18 +5,18 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
     <section id="about" className={"section " + (darkTheme ? "bg-dark-1" : "")}>
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
-        <div className="position-relative d-flex text-center mb-5">
+        <div className="text-center mb-5">
           <h2
             className={
               "text-24  text-uppercase fw-600 w-100 mb-0 " +
-              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+              (darkTheme ? "text-muted opacity-1" : "text-light opacity-8")
             }
           >
             About Me
           </h2>
           <p
             className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
+              "text-9 text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
             }
           >
@@ -53,7 +53,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
             </p>
           </div>
           {/* About me content end */}
-          {/* about me personal detials start */}
+          {/* about me personal details start */}
           <div className="col-lg-5 col-xl-4">
             <div className="ps-lg-4">
               <ul
