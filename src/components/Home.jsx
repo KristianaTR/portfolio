@@ -74,6 +74,7 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
           <a
             href="#about"
             className="scroll-down-arrow text-white smooth-scroll"
+            aria-label="Scroll down to About section"
             onClick={(e) => {
               e.preventDefault();
               handleNavClick("about");

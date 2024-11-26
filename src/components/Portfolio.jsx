@@ -388,6 +388,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                           <a
                             className="popup-ajax stretched-link"
                             href="#exampleModal"
+                            aria-label="View details about the Project"
                             onClick={() => {
                               setSelectedProjectDetails(projectsData[index]);
                             }}
@@ -398,7 +399,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                             <h5 className="text-white fw-400">
                               {project.title}
                             </h5>
-                            <span className="text-light">
+                            <span className="text-white">
                               {project.mainTechologies}
                             </span>
                           </div>
