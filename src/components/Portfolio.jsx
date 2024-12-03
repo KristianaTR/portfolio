@@ -8,6 +8,18 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
   const [filterKey, setFilterKey] = useState("*");
   const [imagesLoaded, setimagesLoaded] = useState(0);
   const [selectedProjectDetails, setSelectedProjectDetails] = useState();
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 520);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const filters = {
     VUE: "Vue",
@@ -314,16 +326,16 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
           {/* Heading */}
           <div className="text-center mb-5">
             <h2
-              className={
-                "text-24  text-uppercase fw-600 w-100 mb-0 " +
+              className={ (isSmallScreen ? "text-21" : "text-24") + 
+                " text-uppercase fw-600 w-100 mb-0 " +
                 (darkTheme ? "text-muted opacity-1" : "text-darker")
               }
             >
               Portfolio
             </h2>
             <p
-              className={
-                "text-9 text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
+              className={ (isSmallScreen ? "text-6 " : "text-9 ") +
+                " text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
                 (darkTheme ? "text-white" : "text-dark")
               }
             >
