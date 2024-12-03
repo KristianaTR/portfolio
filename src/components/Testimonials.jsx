@@ -1,7 +1,27 @@
 import React from "react";
 import Slider from "react-slick";
+import { useEffect, useState } from "react";
 
 const Testimonials = ({ classicHeader, darkTheme }) => {
+
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 520);
+    };
+
+    // Initial check
+    handleResize();
+
+    // Event listener for resizing
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const reviews = [
     {
       name: "Katrina Merca",
@@ -19,14 +39,6 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
       desc: "Kristiana exhibits a strong set of skills and attributes that make them a promising candidate in the field of software development. Their strengths include proficient coding abilities, analytical thinking, and a potential for full-stack development. They also display good soft skills, essential for effective teamwork. They lean toward frontend development, while also showing potential in backend roles. Their familiarity with technologies like React and their logical thinking capabilities contribute to their adaptability and problem-solving skills. Furthermore, their enthusiasm for learning and desire to explore advanced concepts make them a valuable asset in the world of software development.",
       linkedin: "https://www.linkedin.com/in/mustafadennisozdemir/",
     },
-    // {
-    //   name: "Uldis Siliņš",
-    //   position: "Lead Frontend Developer",
-    //   connection: "Mentor at 'Climate Calculator 2050' project",
-    //   src: "images/testimonial/uldis.jfif",
-    //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero laboriosam nisi delectus veniam consequuntur perferendis, eaque nihil sapiente eos magnam illo dicta perspiciatis possimus veritatis voluptatem odio, illum accusantium quisquam!",
-    //   linkedin: "https://www.linkedin.com/in/uldis-silins/",
-    // },
     {
       name: "Oksana Tatarina",
       position: "Project Manager",
@@ -62,18 +74,18 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
-        <div className="position-relative d-flex text-center mb-5">
+        <div className="text-center mb-5">
           <h2
             className={
-              "text-24  text-uppercase fw-600 w-100 mb-0 " +
-              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+              (isSmallScreen ? "text-22" : "text-24") + " text-uppercase fw-600 w-100 mb-0 " +
+              (darkTheme ? "text-muted opacity-1" : "text-light opacity-8")
             }
           >
             Testimonial
           </h2>
           <p
             className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
+              "text-9 text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
             }
           >

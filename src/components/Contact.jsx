@@ -59,18 +59,18 @@ const Contact = ({ classicHeader, darkTheme }) => {
     >
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
-        <div className="position-relative d-flex text-center mb-5">
+        <div className="text-center mb-5">
           <h2
             className={
               "text-24  text-uppercase fw-600 w-100 mb-0 " +
-              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+              (darkTheme ? "text-muted opacity-1" : "text-darker")
             }
           >
             Contact
           </h2>
           <p
             className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
+              "text-9 text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
             }
           >
@@ -91,6 +91,7 @@ const Contact = ({ classicHeader, darkTheme }) => {
             >
               Send me a note
             </h2>
+            <p className="text-1 ">* Indicates required fields</p>
             <form
               className={darkTheme ? "form-dark" : ""}
               id="contact-form"
@@ -101,31 +102,41 @@ const Contact = ({ classicHeader, darkTheme }) => {
             >
               <div className="row g-4">
                 <div className="col-xl-6">
+                  <label htmlFor="name_label" text-0>
+                    Name *
+                  </label>
                   <input
+                    id="name_label"
                     name="user_name"
                     type="text"
                     className="form-control"
                     required
-                    placeholder="Name"
                   />
                 </div>
                 <div className="col-xl-6">
+                  <label htmlFor="email_label" text-0>
+                    Email *
+                  </label>
                   <input
+                    id="email_label"
                     name="user_email"
                     type="email"
                     className="form-control"
                     required
-                    placeholder="Email"
                   />
                 </div>
                 <div className="col">
+                  <label htmlFor="message_label" text-0>
+                    Your message *
+                  </label>
                   <textarea
+                    id="message_label"
                     name="message"
                     className="form-control"
                     rows={5}
                     required
-                    placeholder="Say Hello........"
                     defaultValue={""}
+                    title="Enter message text"
                   />
                 </div>
               </div>
