@@ -312,18 +312,18 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
       >
         <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
           {/* Heading */}
-          <div className="position-relative d-flex text-center mb-5">
+          <div className="text-center mb-5">
             <h2
               className={
                 "text-24  text-uppercase fw-600 w-100 mb-0 " +
-                (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+                (darkTheme ? "text-muted opacity-1" : "text-darker")
               }
             >
               Portfolio
             </h2>
             <p
               className={
-                "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
+                "text-9 text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
                 (darkTheme ? "text-white" : "text-dark")
               }
             >
@@ -388,6 +388,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                           <a
                             className="popup-ajax stretched-link"
                             href="#exampleModal"
+                            aria-label="View details about the Project"
                             onClick={() => {
                               setSelectedProjectDetails(projectsData[index]);
                             }}
@@ -398,7 +399,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
                             <h5 className="text-white fw-400">
                               {project.title}
                             </h5>
-                            <span className="text-light">
+                            <span className="text-white">
                               {project.mainTechologies}
                             </span>
                           </div>

@@ -5,18 +5,18 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
     <section id="about" className={"section " + (darkTheme ? "bg-dark-1" : "")}>
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
-        <div className="position-relative d-flex text-center mb-5">
+        <div className="text-center mb-5">
           <h2
             className={
               "text-24  text-uppercase fw-600 w-100 mb-0 " +
-              (darkTheme ? "text-muted opacity-1" : "text-light opacity-4")
+              (darkTheme ? "text-muted opacity-1" : "text-light opacity-8")
             }
           >
             About Me
           </h2>
           <p
             className={
-              "text-9 text-dark fw-600 position-absolute w-100 align-self-center lh-base mb-0 " +
+              "text-9 text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
             }
           >
@@ -33,27 +33,27 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Kristiāna Tatarčuka,</span> a
-              Junior Front-end Developer
+              I'm <span className="text-primary">Kristiāna Tatarčuka,</span> an
+              Aspiring Front-end Developer
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I'm deeply passionate about coding, a newfound love that drives me
-              to explore and master the art of web development. I thrive on the
-              challenge of solving problems through code, creating web solutions
-              that deliver engaging user experiences. 
+              I'm passionate about coding and committed to deepening my web
+              development skills. I take pleasure in solving challenges through
+              code and creating web solutions that provide effective and
+              engaging user experiences.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
               With a creative mindset and strong determination, I'm dedicated to
               becoming a valuable asset in this industry.
             </p>
             <p className={darkTheme ? "text-white-50" : ""}>
-              I am actively seeking a collaborative
-              team where I can contribute meaningfully, grow professionally, and
-              continue expanding my knowledge in the dynamic field of IT.
+              I am actively seeking a collaborative team where I can contribute
+              meaningfully, grow professionally, and continue expanding my
+              knowledge in the dynamic field of IT.
             </p>
           </div>
           {/* About me content end */}
-          {/* about me personal detials start */}
+          {/* about me personal details start */}
           <div className="col-lg-5 col-xl-4">
             <div className="ps-lg-4">
               <ul
