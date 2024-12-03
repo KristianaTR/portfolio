@@ -10,13 +10,8 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
     const handleResize = () => {
       setIsSmallScreen(window.innerWidth < 520);
     };
-
-    // Initial check
     handleResize();
-
-    // Event listener for resizing
     window.addEventListener("resize", handleResize);
-
     return () => {
       window.removeEventListener("resize", handleResize);
     };
@@ -77,16 +72,15 @@ const Testimonials = ({ classicHeader, darkTheme }) => {
         <div className="text-center mb-5">
           <h2
             className={
-              (isSmallScreen ? "text-22" : "text-24") + " text-uppercase fw-600 w-100 mb-0 " +
+              (isSmallScreen ? "text-21" : "text-24") + " text-uppercase fw-600 w-100 mb-0 " +
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-8")
             }
           >
             Testimonial
           </h2>
           <p
-            className={
-              "text-9 text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
-              (darkTheme ? "text-white" : "text-dark")
+            className={ (isSmallScreen ? "text-6 " : "text-9 ") +
+              " text-dark fw-600 w-100 align-self-center mb-0 lh-base"
             }
           >
             {" "}

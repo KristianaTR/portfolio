@@ -1,6 +1,21 @@
 import React from "react";
+import { useEffect, useState } from "react";
 
 const Skills = ({ classicHeader, darkTheme }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 520);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+
   // skills details
   const skills = [
     {
@@ -44,16 +59,16 @@ const Skills = ({ classicHeader, darkTheme }) => {
         {/* Heading */}
         <div className="text-center mb-5">
           <h2
-            className={
-              "text-24  text-uppercase fw-600 w-100 mb-0 " +
+            className={ (isSmallScreen ? "text-21" : "text-24") + 
+              " text-uppercase fw-600 w-100 mb-0 " +
               (darkTheme ? "text-white-50  opacity-1" : "text-darker")
             }
           >
             Skills
           </h2>
           <p
-            className={
-              "text-9  fw-600 w-100 align-self-center lh-base mb-0 " +
+            className={ (isSmallScreen ? "text-6 " : "text-9 ") +
+              " fw-600 w-100 align-self-center mb-0 lh-base" +
               (darkTheme ? "text-white" : "text-dark")
             }
           >
@@ -64,10 +79,10 @@ const Skills = ({ classicHeader, darkTheme }) => {
         {/* Heading end*/}
         {/* content start */}
         <div className="row">
-          <h4 className="text-center mb-5">
+          <p className="text-4 fw-500 text-center mb-5">
             During all my coding experiences, I have used the following
             technologies:
-          </h4>
+          </p>
           <div className="col-lg-11 mx-auto">
             <div className="row">
               {skills.length > 0 &&
