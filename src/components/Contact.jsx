@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -8,6 +8,18 @@ import { Tooltip } from "./Tooltip";
 const Contact = ({ classicHeader, darkTheme }) => {
   const form = useRef();
   const [sendingMail, setSendingMail] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 520);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -61,16 +73,16 @@ const Contact = ({ classicHeader, darkTheme }) => {
         {/* Heading */}
         <div className="text-center mb-5">
           <h2
-            className={
-              "text-24  text-uppercase fw-600 w-100 mb-0 " +
+            className={ (isSmallScreen ? "text-21" : "text-24") + 
+              " text-uppercase fw-600 w-100 mb-0 " +
               (darkTheme ? "text-muted opacity-1" : "text-darker")
             }
           >
             Contact
           </h2>
           <p
-            className={
-              "text-9 text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
+            className={ (isSmallScreen ? "text-6 " : "text-9 ") +
+              " text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
             }
           >

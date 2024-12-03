@@ -1,7 +1,21 @@
 import React from "react";
 import resumeFile from "../documents/resume.pdf";
+import { useEffect, useState } from "react";
 
 const Resume = ({ classicHeader, darkTheme }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 520);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const educationDetails = [
     {
       yearRange: "2006 - 2008",
@@ -68,16 +82,16 @@ const Resume = ({ classicHeader, darkTheme }) => {
         {/* Heading */}
         <div className="text-center mb-5">
           <h2
-            className={
-              "text-24  text-uppercase fw-600 w-100 mb-0 " +
+            className={ (isSmallScreen ? "text-21" : "text-24") + 
+              " text-uppercase fw-600 w-100 mb-0 " +
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-8")
             }
           >
             Summary
           </h2>
           <p
-            className={
-              "text-9 text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
+            className={ (isSmallScreen ? "text-6 " : "text-9 ") +
+              " text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
             }
           >

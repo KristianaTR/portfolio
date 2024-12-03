@@ -52,14 +52,15 @@ const Home = ({ classicHeader, darkTheme, handleNavClick }) => {
                   {showFirstString ? (
                     <p className="text-16 fw-600 text-white mb-2 mb-md-3">
                       My name is Kristiāna <br/>
-                      and this is my <br/> web development portfolio
+                      and this is my <br/> Web Development portfolio
                     </p>
                   ) : (
                     <Typewriter
                       options={{
                         strings: [
                           "My name is Kristiāna",
-                          "and this is my web development portfolio",
+                          "and this is my",
+                          "Web Development portfolio",
                         ],
                         autoStart: loop,
                         loop: loop,

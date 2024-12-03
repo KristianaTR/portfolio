@@ -1,22 +1,37 @@
 import React from "react";
 import resumeFile from "../documents/resume.pdf";
+import { useEffect, useState } from "react";
+
 const AboutUs = ({ classicHeader, darkTheme }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 520);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section id="about" className={"section " + (darkTheme ? "bg-dark-1" : "")}>
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
         <div className="text-center mb-5">
           <h2
-            className={
-              "text-24  text-uppercase fw-600 w-100 mb-0 " +
+            className={ (isSmallScreen ? "text-21" : "text-24") +
+              " text-uppercase fw-600 w-100 mb-0 " +
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-8")
             }
           >
             About Me
           </h2>
           <p
-            className={
-              "text-9 text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
+            className={ (isSmallScreen ? "text-6 " : "text-9 ") +
+              " text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
             }
           >
@@ -33,8 +48,7 @@ const AboutUs = ({ classicHeader, darkTheme }) => {
                 "text-7 fw-600 mb-3 " + (darkTheme ? "text-white" : "")
               }
             >
-              I'm <span className="text-primary">Kristiāna Tatarčuka,</span> an
-              Aspiring Front-end Developer
+              Hey, I'm <span className="text-primary">Kristiāna Tatarčuka</span> 
             </h2>
             <p className={darkTheme ? "text-white-50" : ""}>
               I'm passionate about coding and committed to deepening my web
