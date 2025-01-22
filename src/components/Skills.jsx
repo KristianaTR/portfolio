@@ -15,7 +15,6 @@ const Skills = ({ classicHeader, darkTheme }) => {
     };
   }, []);
 
-
   // skills details
   const skills = [
     {
@@ -40,7 +39,7 @@ const Skills = ({ classicHeader, darkTheme }) => {
     },
     {
       name: "Back-end technologies",
-      desc: "PHP, MySQL, MongoDB, Express",
+      desc: "MongoDB, Express",
       icon: "fas fa-database",
     },
     {
@@ -48,18 +47,26 @@ const Skills = ({ classicHeader, darkTheme }) => {
       desc: "Git, GitHub",
       icon: "fa-brands fa-square-git",
     },
+    {
+      name: "SEO",
+      desc: "Google Search Console, Google Analytics",
+      icon: "fa-brands fa-searchengin",
+    },
+    {
+      name: "Accessibility",
+      desc: "Accessibility Insights, Wave, NVDA",
+      icon: "fa-solid fa-universal-access",
+    },
   ];
 
   return (
-    <section
-      id="skills"
-      className={"section bg-light"}
-    >
+    <section id="skills" className={"section bg-light"}>
       <div className={"container " + (classicHeader ? "" : "px-lg-5")}>
         {/* Heading */}
         <div className="text-center mb-5">
           <h2
-            className={ (isSmallScreen ? "text-21" : "text-24") + 
+            className={
+              (isSmallScreen ? "text-21" : "text-24") +
               " text-uppercase fw-600 w-100 mb-0 " +
               (darkTheme ? "text-white-50  opacity-1" : "text-darker")
             }
@@ -67,7 +74,8 @@ const Skills = ({ classicHeader, darkTheme }) => {
             Skills
           </h2>
           <p
-            className={ (isSmallScreen ? "text-6 " : "text-9 ") +
+            className={
+              (isSmallScreen ? "text-6 " : "text-9 ") +
               " fw-600 w-100 align-self-center mb-0 lh-base" +
               (darkTheme ? "text-white" : "text-dark")
             }
