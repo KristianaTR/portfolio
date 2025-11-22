@@ -1,6 +1,8 @@
 import React from "react";
 
 const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer
       id="footer"
@@ -10,7 +12,7 @@ const Footer = ({ classicHeader, darkTheme, handleNavClick }) => {
         <div className="row">
           <div className="col-lg-6 text-center text-lg-start">
             <p className="mb-3 mb-lg-0">
-              Copyright © 2024{" "}
+              Copyright © {currentYear}{" "}
               <a
                 href="#home"
                 className="fw-500"

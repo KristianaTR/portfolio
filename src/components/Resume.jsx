@@ -1,5 +1,4 @@
 import React from "react";
-import resumeFile from "../documents/resume.pdf";
 import { useEffect, useState } from "react";
 
 const Resume = ({ classicHeader, darkTheme }) => {
@@ -18,14 +17,14 @@ const Resume = ({ classicHeader, darkTheme }) => {
 
   const educationDetails = [
     {
-      yearRange: "2006 - 2008",
+      yearRange: "2008",
       title: "Master Degree",
       place:
         "Riga International School of Economics and Business Administration",
       desc: "Business Management",
     },
     {
-      yearRange: "2001 - 2005",
+      yearRange: "2005",
       title: "Bachelor Degree",
       place: "University of Latvia",
       desc: "Social Sciences in Management and Administration",
@@ -50,26 +49,40 @@ const Resume = ({ classicHeader, darkTheme }) => {
       title: "WEB Development Bootcamp",
       place: "Riga Coding School",
       desc: "A full-stack WEB development course covering HTML, CSS, JavaScript, PHP, MySQL, and WordPress.",
-    }
+    },
   ];
   const experienceDetails = [
+    {
+      yearRange: "2024 - Present",
+      title: "Web Developer",
+      place: "Freelance",
+      desc: ["Build websites integrating SEO optimization practices"],
+    },
     {
       yearRange: "2023",
       title: "Jr. Front-end Developer || Internship",
       place: "Accenture Baltics",
-      desc: "Advancing my front-end development skills through hands-on experiences. Following a structured internship roadmap crafted by experienced professionals.",
+      desc: [
+        "Advancing my front-end development skills through hands-on experiences.",
+      ],
     },
     {
       yearRange: "2018 – 2023",
       title: "Career transition",
       place: "",
-      desc: "Actively participating in training programs and continuously acquiring new skills. I leverage my strong analytical abilities and natural talent for creativity to excel in the field of technology. As a determined individual, I am dedicated to advancing my expertise and contributing effectively to the tech industry.",
+      desc: [
+        "Participating in various technical training programs and courses to upskill",
+        "Build upon my previous analytical expertise by acquiring technical skills in web development and modern technologies",
+      ],
     },
     {
       yearRange: "2013 - 2017",
       title: "Analyst",
-      place: "Latectus Ltd (a subsidiary of the SEB group)",
-      desc: "Analyzing real estate to be acquired (Comparative Market Analysis ); communicating the findings and insights to the relevant stakeholders; participation in real estate auctions conducted by bailiffs to acquire the properties.",
+      place: "SEB Latvia (SIA Latectus -SEB Group Real Estate Holding Company)",
+      desc: [
+        "Market Research and real estate valuation",
+        "Data Analysis and Data visualization",
+      ],
     },
   ];
 
@@ -82,7 +95,8 @@ const Resume = ({ classicHeader, darkTheme }) => {
         {/* Heading */}
         <div className="text-center mb-5">
           <h2
-            className={ (isSmallScreen ? "text-21" : "text-24") + 
+            className={
+              (isSmallScreen ? "text-21" : "text-24") +
               " text-uppercase fw-600 w-100 mb-0 " +
               (darkTheme ? "text-muted opacity-1" : "text-light opacity-8")
             }
@@ -90,7 +104,8 @@ const Resume = ({ classicHeader, darkTheme }) => {
             Summary
           </h2>
           <p
-            className={ (isSmallScreen ? "text-6 " : "text-9 ") +
+            className={
+              (isSmallScreen ? "text-6 " : "text-9 ") +
               " text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
               (darkTheme ? "text-white" : "text-dark")
             }
@@ -129,9 +144,11 @@ const Resume = ({ classicHeader, darkTheme }) => {
                   <p className={darkTheme ? "text-primary" : "text-danger"}>
                     {value.place}
                   </p>
-                  <p className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
-                    {value.desc}
-                  </p>
+                  <ul className={"mb-0 " + (darkTheme ? "text-white-50" : "")}>
+                    {value.desc.map((info, index) => (
+                      <li key={index}>{info}</li>
+                    ))}
+                  </ul>
                 </div>
               ))}
           </div>
@@ -204,7 +221,7 @@ const Resume = ({ classicHeader, darkTheme }) => {
         <div className="text-center mt-5">
           <a
             className="btn btn-outline-secondary rounded-pill shadow-none"
-            href={resumeFile}
+            href="/resume.pdf"
             download
           >
             Download CV

@@ -39,7 +39,7 @@ const Skills = ({ classicHeader, darkTheme }) => {
     },
     {
       name: "Back-end technologies",
-      desc: "MongoDB, Express",
+      desc: "PostgreSQL, MongoDB, Express",
       icon: "fas fa-database",
     },
     {

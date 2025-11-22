@@ -29,6 +29,31 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
 
   const projectsData = [
     {
+      title: "Website for Sports Physiotherapist Toms Zvonkovs",
+      projectInfo: [
+        "The main goal of the TZ Sports Physio website was to create a professional online presence for Certified Sports Physiotherapist Toms Zvonkovs, presenting his expertise, experience, and physiotherapy services in a structured, trustworthy, and visually modern way.",
+        "The website needed to reflect credibility, precision, and high performance — core values of sports medicine — while offering visitors clear information, easy navigation, and direct contact options (including Instagram and WhatsApp).",
+      ],
+      reflections: [
+        "As sole front-end developer on this freelance project, I handled all aspects of design (in Figma), content creation (copywriting and structuring), layout and responsive coding",
+      ],
+      origin: "Freelance Project",
+      technologies: "HTML, CSS, WordPress, PHP, Figma",
+      mainTechologies: "WordPress, PHP",
+      date: "October, 2025",
+      url: {
+        name: "www.tzsportsphysio.com",
+        link: "https://tzsportsphysio.com",
+      },
+      thumbImage: "images/projects/project-9-TZSportsPhysio_00.png",
+      sliderImages: [
+        "images/projects/project-9-TZSportsPhysio_01.png",
+        "images/projects/project-9-TZSportsPhysio_02.png",
+        "images/projects/project-9-TZSportsPhysio_03.png",
+      ],
+      categories: [filters.WORDPRESS],
+    },
+    {
       title: "Website for Animal Shelter Mežavairogi",
       projectInfo: [
         "The goal was to create a modern and user-friendly website to contribute to the shelter's mission.",
@@ -99,9 +124,9 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "The platform was built using React.js framework, with a focus on incorporating atomic design principles and using Redux for state management. For data storage, the project utilizes the browser's localStorage feature.",
       ],
       reflections: [
-        "My main focus was using new React libraries like styled-components and react-toastify. I also discovered a library called React Hook Form, which I will use in my next project for building forms.",      
+        "My main focus was using new React libraries like styled-components and react-toastify. I also discovered a library called React Hook Form, which I will use in my next project for building forms.",
         "But the most challenging part was to structure the project and build the components aligning with atomic design methodology introduced by Brad Frost.",
-        "The key takeaway from this project is the importance of utilizing various libraries and frameworks, as they significantly reduce the amount of code you need to write.",      
+        "The key takeaway from this project is the importance of utilizing various libraries and frameworks, as they significantly reduce the amount of code you need to write.",
       ],
       origin: "Internship at Accenture",
       technologies: "React.js, styled-components, Redux, LocalStorage",
@@ -132,8 +157,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "For the back-end, created a Node.js server with API endpoints to handle Create-Read-Update-Delete (CRUD) operations.",
       ],
       reflections: [
-        "This project was relatively straightforward, thanks to the excellent foundation provided by my Bootcamp instructor.",      
-        "Although it was my second time building an app with Vue.js, I had a solid understanding of both the app's interface and the server-side JavaScript needed to connect user interactions with the database and retrieve data.",      
+        "This project was relatively straightforward, thanks to the excellent foundation provided by my Bootcamp instructor.",
+        "Although it was my second time building an app with Vue.js, I had a solid understanding of both the app's interface and the server-side JavaScript needed to connect user interactions with the database and retrieve data.",
       ],
       origin: "SheGoesTech Bootcamp",
       technologies: "HTML5, CSS3, JavaScript, Vue.js, SQL, Node.js, Git/GitHub",
@@ -203,8 +228,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "In developing this project, I navigated a range of complex topics:",
         "Improved my ability to structure and organize the app (Redux structure, public folder, styles folder)",
         "A significant challenge was implementing robust error handling with techniques like Error Boundaries and managing API errors.",
-        "Ensuring smooth animations and handling SVG icons efficiently using SVG sprites", 
-        "Will be more...",     
+        "Ensuring smooth animations and handling SVG icons efficiently using SVG sprites",
+        "Will be more...",
       ],
       origin: "Self Learning Process",
       technologies:
@@ -239,7 +264,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "On the back-end, Node.js serves as the server framework, managing connections to the Stripe payment gateway.",
       ],
       reflections: [
-        "As for a front-end developer, this project provided a straightforward user interface that offered a valuable opportunity to learn how to connect the front-end to the Stripe Checkout page.",      
+        "As for a front-end developer, this project provided a straightforward user interface that offered a valuable opportunity to learn how to connect the front-end to the Stripe Checkout page.",
       ],
       origin: "Learning Project",
       technologies: "Vue.js, Node.js, Stripe",
@@ -270,7 +295,7 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
         "Real-time temperature data is fetched from the Weather API provided by openweathermap.org.",
       ],
       reflections: [
-        "This was one of my initial experiences using React for web development, with a primary focus on leveraging component reusability, passing props, and utilizing hooks for state management.",      
+        "This was one of my initial experiences using React for web development, with a primary focus on leveraging component reusability, passing props, and utilizing hooks for state management.",
       ],
       origin: "JavaScript Bootcamp",
       technologies: "React.js, CSS",
@@ -326,7 +351,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
           {/* Heading */}
           <div className="text-center mb-5">
             <h2
-              className={ (isSmallScreen ? "text-21" : "text-24") + 
+              className={
+                (isSmallScreen ? "text-21" : "text-24") +
                 " text-uppercase fw-600 w-100 mb-0 " +
                 (darkTheme ? "text-muted opacity-1" : "text-darker")
               }
@@ -334,7 +360,8 @@ const Portfolio = ({ classicHeader, darkTheme }) => {
               Portfolio
             </h2>
             <p
-              className={ (isSmallScreen ? "text-6 " : "text-9 ") +
+              className={
+                (isSmallScreen ? "text-6 " : "text-9 ") +
                 " text-dark fw-600 w-100 align-self-center lh-base mb-0 " +
                 (darkTheme ? "text-white" : "text-dark")
               }
